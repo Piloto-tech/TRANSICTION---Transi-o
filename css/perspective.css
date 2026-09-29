@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pai {
+    width: 180px;
+    height: 180px;
+    border: 1px solid lightgray;
+    margin: 30px;
+
+}
+
+.filho {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transform: rotatez(60deg);
+
+}
+
+.pai:hover {
+    perspective: 500px;
+}
+
+/********************CARDS*************/
+.pai2 {
+    width: 200px;
+    height: 250px;
+    perspective: 600px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.quad {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frente {
+    background-color: green;
+}
+
+.tras {
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+.pai2:hover .card {
+    transform: rotateY(180deg);
+}
+
+/****************TRANSCICTION*****************/
+
+.diogo {
+    width: 100px;
+    height: 500px;
+    background-color: blue;
+    transition: width 10s ease-out, background-color 5s, opacity 5s, border-radius 10s;
+    opacity: 1;
+}
+
+.diogo:hover {
+    height: 50px;
+    width: 500px;
+    border-radius: 50px;
+    opacity: 0.1;
+    background-color: black;
+}
+
+/*******EXEMPLO3*******/
+.samuel{
+    margin: 100px;
+}
+.circle{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.samuel:hover {
+    transform: translateX(200px);
+}
+.filho1{
+     
+     background-color: blue;
+     transition: translateX  5s linear;
+    
+}
+/*
+.filho2{
+     
+     background-color: green;
+     transition: all 1.5s ease;
+    
+}
+.filho3{
+     
+     background-color:yellow;
+     transition: all 1.5s ease-in;
+}
+.filho4{
+    
+     background-color:rgb(55, 0, 255);
+     transition: all 1.5s ease-in;
+}
+.filho5{
+     
+     background-color:yellow;
+     transition: all 1.5s ease-out;
+}
+.filho6{
+     
+     background-color:yellow;
+     transition: all 1.5s ease-in-out;
+}*/

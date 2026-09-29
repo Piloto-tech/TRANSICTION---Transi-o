@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 0 auto;
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border: solid 1px black;
+    /*transform: translate(150px,500px);*/
+} 
+
+div:hover{
+    /*transform: rotate(25deg);*/
+    /*transform: scaleX(200%);*/
+    /*aumenta a largura do elemento em 200%*/
+    /*transform: scale(200%,150%);*/
+    transform: skew(30deg);
+}
